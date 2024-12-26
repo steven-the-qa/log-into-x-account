@@ -19,7 +19,7 @@ test('Post and delete a tweet', async ({ page }) => {
       await randomDelay(page, 1000, 2000);
       
       if (!process.env.EMAIL) throw new Error('EMAIL environment variable is required');
-      await typeWithDelay(page, '[aria-label="Phone, email, or username"]', process.env.EMAIL);
+      await typeWithDelay(page, 'Phone, email, or username', process.env.EMAIL);
       
       await randomDelay(page, 1000, 2000);
       await page.getByRole('button', { name: 'Next' }).click();

@@ -19,7 +19,7 @@ export const randomDelay = async (page: Page, min: number, max: number) => {
  */
 export const typeWithDelay = async (page: Page, locator: string, text: string) => {
   for (const char of text) {
-    await page.locator(locator).type(char, { delay: Math.random() * 100 + 50 });
+    await page.getByPlaceholder(locator).pressSequentially(char, { delay: Math.random() * 100 + 50 });
     await randomDelay(page, 50, 150);
   }
 }; 
