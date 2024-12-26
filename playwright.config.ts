@@ -17,7 +17,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
     viewport: { width: 1440, height: 900 },
     contextOptions: {
-      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      userAgent: 'Mozilla/5.0 (Macintosh; Apple Silicon Mac OS X 14_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     },
     launchOptions: {
       slowMo: 100,
